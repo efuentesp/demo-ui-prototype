@@ -59,20 +59,20 @@ import './components/patterns/wizard/step-wizard.tag'
 
 // Componentes generados
 import './components/app/afiliado/afiliado-admin.tag'
-import './components/app/afiliado/afiliado-add.tag'
 import './components/app/afiliado/afiliado-form.tag'
+import './components/app/afiliado/afiliado-add.tag'
 import './components/app/afiliado/afiliado-edit.tag'
 import './components/app/afiliado/afiliado-delete.tag'
-import './components/app/tipoPension/tipoPension-admin.tag'
-import './components/app/tipoPension/tipoPension-add.tag'
-import './components/app/tipoPension/tipoPension-form.tag'
-import './components/app/tipoPension/tipoPension-edit.tag'
-import './components/app/tipoPension/tipoPension-delete.tag'
-import './components/app/solicitudPension/solicitudPension-admin.tag'
-import './components/app/solicitudPension/solicitudPension-form.tag'
-import './components/app/solicitudPension/solicitudPension-add.tag'
-import './components/app/solicitudPension/solicitudPension-edit.tag'
-import './components/app/solicitudPension/solicitudPension-delete.tag'
+import './components/app/tipopension/tipopension-admin.tag'
+import './components/app/tipopension/tipopension-form.tag'
+import './components/app/tipopension/tipopension-add.tag'
+import './components/app/tipopension/tipopension-edit.tag'
+import './components/app/tipopension/tipopension-delete.tag'
+import './components/app/solicitudpension/solicitudpension-admin.tag'
+import './components/app/solicitudpension/solicitudpension-form.tag'
+import './components/app/solicitudpension/solicitudpension-add.tag'
+import './components/app/solicitudpension/solicitudpension-edit.tag'
+import './components/app/solicitudpension/solicitudpension-delete.tag'
 
 const msgs = require('json-loader!./default-messages.json')
 var msgJSON = JSON.stringify(msgs)
@@ -108,16 +108,16 @@ var routes = [
   { route: '/login/', tag: 'login' },
   { route: '/home/', tag: 'app' },
   { route: '/afiliado-admin/', tag: 'afiliado-admin' },
-  { route: '/tipoPension-admin/', tag: 'tipoPension-admin' },
-  { route: '/solicitudPension-admin/', tag: 'solicitudPension-admin' },
+  { route: '/tipopension-admin/', tag: 'tipopension-admin' },
+  { route: '/solicitudpension-admin/', tag: 'solicitudpension-admin' },
   { route: '/afiliado-add/', tag: 'afiliado-add' },
-  { route: '/tipoPension-add/', tag: 'tipoPension-add' },
-  { route: '/solicitudPension-add/', tag: 'solicitudPension-add' },
+  { route: '/tipopension-add/', tag: 'tipopension-add' },
+  { route: '/solicitudpension-add/', tag: 'solicitudpension-add' },
   { route: '/afiliado-edit/', tag: 'afiliado-edit' },
-  { route: '/tipoPension-edit/', tag: 'tipoPension-edit' },
-  { route: '/solicitudPension-edit/', tag: 'solicitudPension-edit' },
+  { route: '/tipopension-edit/', tag: 'tipopension-edit' },
+  { route: '/solicitudpension-edit/', tag: 'solicitudpension-edit' },
   { route: '/afiliado-delete/', tag: 'afiliado-delete' },
-  { route: '/tipoPension-delete/', tag: 'tipoPension-delete' },
-  { route: '/solicitudPension-delete/', tag: 'solicitudPension-delete' }
+  { route: '/tipopension-delete/', tag: 'tipopension-delete' },
+  { route: '/solicitudpension-delete/', tag: 'solicitudpension-delete' }
 ]
 riot.mount('*', { routes: routes, options: { hashbang: true, params: { title: 'Login', username: 'Usuario', password: 'Contrase�a', link: '//' } } })

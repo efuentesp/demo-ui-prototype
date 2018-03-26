@@ -2,22 +2,22 @@
     {
       "id": "solicitudpension-results",
       "headers": [
-{ "label": "Numero" }			       ,
-{ "label": "Afiliado" }			       ,
-{ "label": "Tipo" }			       ,
+{ "label": "Numero" },
+{ "label": "Afiliado" },
+{ "label": "Tipo" },
 { "label": "Observaciones" }
       ],
       "rows": [
       	{ "id": "XXX", "data": [
-	      "XXX"	       ,
-	      "XXX"	       ,
-	      "XXX"	       ,
+	      "XXX",
+	      "XXX",
+	      "XXX",
 	      "XXX"
       	] },
       	{ "id": "XXX", "data": [
-	      "XXX"	       ,
-	      "XXX"	       ,
-	      "XXX"	       ,
+	      "XXX",
+	      "XXX",
+	      "XXX",
 	      "XXX"
       	] }
       ]

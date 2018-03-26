@@ -2,22 +2,25 @@
     {
       "id": "afiliado-results",
       "headers": [
-        { "label": "Nss" },
-        { "label": "Nombre" },
-        { "label": "Apellido_paterno" },
-        { "label": "Apellido_materno" }
+{ "label": "Nss" },
+{ "label": "Nombre" },
+{ "label": "Apellido_paterno" },
+{ "label": "Apellido_materno" },
+{ "label": "Genero" }
       ],
       "rows": [
       	{ "id": "XXX", "data": [
-	      "XXX"	       ,
-	      "XXX"	       ,
-	      "XXX"	       ,
+	      "XXX",
+	      "XXX",
+	      "XXX",
+	      "XXX",
 	      "XXX"
       	] },
       	{ "id": "XXX", "data": [
-	      "XXX"	       ,
-	      "XXX"	       ,
-	      "XXX"	       ,
+	      "XXX",
+	      "XXX",
+	      "XXX",
+	      "XXX",
 	      "XXX"
       	] }
       ]
