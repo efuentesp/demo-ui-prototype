@@ -1,0 +1,26 @@
+{"ids":[
+    {
+      "id": "afiliado-results",
+      "headers": [
+        { "label": "Nss" },
+        { "label": "Nombre" },
+        { "label": "Apellido_paterno" },
+        { "label": "Apellido_materno" }
+      ],
+      "rows": [
+      	{ "id": "XXX", "data": [
+	      "XXX"	       ,
+	      "XXX"	       ,
+	      "XXX"	       ,
+	      "XXX"
+      	] },
+      	{ "id": "XXX", "data": [
+	      "XXX"	       ,
+	      "XXX"	       ,
+	      "XXX"	       ,
+	      "XXX"
+      	] }
+      ]
+    }
+  ]
+}

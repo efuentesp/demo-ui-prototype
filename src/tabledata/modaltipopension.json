@@ -1,0 +1,14 @@
+{"ids":[
+  {
+    "id": "tipopension-results",
+    "headers": [
+      { "label": "Clave" },
+      { "label": "Nombre" }
+    ],
+    "rows": [
+    	{ "id": "XXX", "data": ["XXX", "XXX"] },
+    	{ "id": "XXX", "data": ["XXX", "XXX"] }
+    ]
+  }
+]
+}
