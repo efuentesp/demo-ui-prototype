@@ -63,12 +63,12 @@ import './components/app/afiliado/afiliado-add.tag'
 import './components/app/afiliado/afiliado-form.tag'
 import './components/app/afiliado/afiliado-edit.tag'
 import './components/app/afiliado/afiliado-delete.tag'
-import './components/app/tipoPension/tipoPension-admin.tag'
+import './components/app/tipoPension/tipopension-admin.tag'
 import './components/app/tipoPension/tipoPension-add.tag'
 import './components/app/tipoPension/tipoPension-form.tag'
 import './components/app/tipoPension/tipoPension-edit.tag'
 import './components/app/tipoPension/tipoPension-delete.tag'
-import './components/app/solicitudPension/solicitudPension-admin.tag'
+import './components/app/solicitudPension/solicitudpension-admin.tag'
 import './components/app/solicitudPension/solicitudPension-form.tag'
 import './components/app/solicitudPension/solicitudPension-add.tag'
 import './components/app/solicitudPension/solicitudPension-edit.tag'
@@ -108,8 +108,8 @@ var routes = [
   { route: '/login/', tag: 'login' },
   { route: '/home/', tag: 'app' },
   { route: '/afiliado-admin/', tag: 'afiliado-admin' },
-  { route: '/tipoPension-admin/', tag: 'tipoPension-admin' },
-  { route: '/solicitudPension-admin/', tag: 'solicitudPension-admin' },
+  { route: '/tipopension-admin/', tag: 'tipopension-admin' },
+  { route: '/solicitudpension-admin/', tag: 'solicitudpension-admin' },
   { route: '/afiliado-add/', tag: 'afiliado-add' },
   { route: '/tipoPension-add/', tag: 'tipoPension-add' },
   { route: '/solicitudPension-add/', tag: 'solicitudPension-add' },

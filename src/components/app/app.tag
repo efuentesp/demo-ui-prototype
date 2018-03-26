@@ -6,17 +6,17 @@
 		<sidebar-menu>
 		<menu-section title="Afiliado Administración">
 			<side-menu icon="fa fa-group" label="afiliado">
-				<menu-item to="/afiliado-admin/" label="Administraci�n"/>
+				<menu-item to="/afiliado-admin/" label="Administración"/>
 			</side-menu>
 		</menu-section>
 		<menu-section title="TipoPension Administración">
 			<side-menu icon="fa fa-group" label="tipoPension">
-				<menu-item to="/tipopension-admin/" label="Administraci�n"/>
+				<menu-item to="/tipopension-admin/" label="Administración"/>
 			</side-menu>
 		</menu-section>
 		<menu-section title="SolicitudPension Administración">
 			<side-menu icon="fa fa-group" label="solicitudPension">
-				<menu-item to="/solicitudpension-admin/" label="Administraci�n"/>
+				<menu-item to="/solicitudpension-admin/" label="Administración"/>
 			</side-menu>
 		</menu-section>
 		</sidebar-menu>
