@@ -29,7 +29,7 @@
 	        <row>
 	          <column>
 	    <search-box id="searchboxsample" link="generomodal" caption="Genero" placeholder="Genero" />
-	   	<modal-box id="generomodal"  data="genero-results" title="Seleccionar Genero " action="select-multi" pagination="true"/>
+	   	<modal-box id="generomodal"  data="afiliado-results" title="Seleccionar Genero " action="select-multi" pagination="true"/>
 	       	  </column>
 	     	</row>    
 		    
