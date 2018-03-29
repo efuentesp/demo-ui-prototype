@@ -21,6 +21,17 @@
 			<inputbox id="apellido_materno" type="text" label="Apellido_materno" value="" placeholder="Apellido_materno del Afiliado" required=true disabled=false minsize=3 maxsize=100 />
 			</column>
 			</row>
+			
+			
+			
+			<row>
+			  <column>
+			    <select-box id="genero" type="select" placeholder="Genero" required=true>
+			      <option-box id="estatus-01" label="Abierto" />
+			      <option-box id="estatus-02" label="Cerrado" />
+			    </select-box>
+			   </column>
+			 </row>
 		</formbox>
 	</page>
 </afiliado-add>

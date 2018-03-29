@@ -1,21 +1,27 @@
 {"ids":[
     {
-      "id": "solicitudpension-results",
+      "id": "beneficiario-results",
       "headers": [
-{ "label": "Numero" },
-{ "label": "Afiliado" },
-{ "label": "Tipo" },
-{ "label": "Observaciones" }
+{ "label": "Curp" },
+{ "label": "Nombre" },
+{ "label": "Apellido_paterno" },
+{ "label": "Apellido_materno" },
+{ "label": "Fecha_nacimiento" },
+{ "label": "Parentesco" }
       ],
       "rows": [
       	{ "id": "XXX", "data": [
 	      "XXX",
 "XXX",
 "XXX",
+"XXX",
+"XXX",
 "XXX"
       	] },
       	{ "id": "XXX", "data": [
 	      "XXX",
+"XXX",
+"XXX",
 "XXX",
 "XXX",
 "XXX"

@@ -19,6 +19,11 @@
 				<menu-item to="/solicitudpension-admin/" label="Administración"/>
 			</side-menu>
 		</menu-section>
+		<menu-section title="Beneficiario Administración">
+			<side-menu icon="fa fa-group" label="beneficiario">
+				<menu-item to="/beneficiario-admin/" label="Administración"/>
+			</side-menu>
+		</menu-section>
 		</sidebar-menu>
 	</sidebar>
   <topbar></topbar>
