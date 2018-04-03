@@ -5,6 +5,7 @@
 { "label": "Numero" },
 { "label": "Afiliado" },
 { "label": "Tipo" },
+{ "label": "Fecha_solicitud" },
 { "label": "Observaciones" }
       ],
       "rows": [
@@ -12,10 +13,12 @@
 	      "XXX",
 "XXX",
 "XXX",
+"XXX",
 "XXX"
       	] },
       	{ "id": "XXX", "data": [
 	      "XXX",
+"XXX",
 "XXX",
 "XXX",
 "XXX"

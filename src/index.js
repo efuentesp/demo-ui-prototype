@@ -110,7 +110,7 @@ for (var j = 0; j < json.files.length; j++) {
 
 require('riot-routehandler')
 var routes = [
-  { route: '/login/', tag: 'login' },
+  { route: '/', tag: 'login' },
   { route: '/home/', tag: 'app' },
   { route: '/afiliado-admin/', tag: 'afiliado-admin' },
   { route: '/tipopension-admin/', tag: 'tipopension-admin' },
