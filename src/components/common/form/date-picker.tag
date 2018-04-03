@@ -14,7 +14,12 @@
 
 		function setDatePicker(){
 			var dpId = "#" +  opts.id;
-			var dpDateFormat = opts.format.toLowerCase();
+			var dpDateFormat = "";
+			if ( opts.format ) {
+				dpDateFormat = opts.format
+			} else {
+				dpDateFormat = "dd/mm/yyyy"
+			}
 			showPicker(dpId, dpDateFormat, opts.mindate, opts.maxdate, opts.value);
 		}
 
