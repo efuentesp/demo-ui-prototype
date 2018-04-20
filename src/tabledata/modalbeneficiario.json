@@ -1,32 +1,19 @@
-{"ids":[
-    {
-      "id": "beneficiario-results",
-      "headers": [
-{ "label": "Curp" },
-{ "label": "Nombre" },
-{ "label": "Apellido_paterno" },
-{ "label": "Apellido_materno" },
-{ "label": "Fecha_nacimiento" },
-{ "label": "Parentesco" }
-      ],
-      "rows": [
-      	{ "id": "XXX", "data": [
-	      "XXX",
-"XXX",
-"XXX",
-"XXX",
-"XXX",
+
+	{"ids":[
+	    {
+	      "id": "beneficiario-results",
+	      "headers": [
+		  
+{ "label": "CURP" }
+	      ],
+	      "rows": [
+	      	{ "id": "XXX", "data": [
 "XXX"
-      	] },
-      	{ "id": "XXX", "data": [
-	      "XXX",
-"XXX",
-"XXX",
-"XXX",
-"XXX",
+	      	] },
+	      	{ "id": "XXX", "data": [
 "XXX"
-      	] }
-      ]
-    }
-  ]
-}
+	      	] }
+	      ]
+	    }
+	  ]
+	}

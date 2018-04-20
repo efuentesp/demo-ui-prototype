@@ -1,29 +1,27 @@
-{"ids":[
-    {
-      "id": "solicitudpension-results",
-      "headers": [
+
+	{"ids":[
+	    {
+	      "id": "solicitudpension-results",
+	      "headers": [
+		  
 { "label": "Numero" },
+		  
 { "label": "Afiliado" },
-{ "label": "Tipo" },
-{ "label": "Fecha_solicitud" },
-{ "label": "Observaciones" }
-      ],
-      "rows": [
-      	{ "id": "XXX", "data": [
-	      "XXX",
-"XXX",
+		  
+{ "label": "Tipo" }
+	      ],
+	      "rows": [
+	      	{ "id": "XXX", "data": [
 "XXX",
 "XXX",
 "XXX"
-      	] },
-      	{ "id": "XXX", "data": [
-	      "XXX",
-"XXX",
+	      	] },
+	      	{ "id": "XXX", "data": [
 "XXX",
 "XXX",
 "XXX"
-      	] }
-      ]
-    }
-  ]
-}
+	      	] }
+	      ]
+	    }
+	  ]
+	}

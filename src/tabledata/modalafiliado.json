@@ -1,29 +1,31 @@
-{"ids":[
-    {
-      "id": "afiliado-results",
-      "headers": [
-{ "label": "Nss" },
-{ "label": "Nombre" },
-{ "label": "Apellido_paterno" },
-{ "label": "Apellido_materno" },
-{ "label": "Genero" }
-      ],
-      "rows": [
-      	{ "id": "XXX", "data": [
-	      "XXX",
+
+	{"ids":[
+	    {
+	      "id": "afiliado-results",
+	      "headers": [
+		  
+{ "label": "NSS" },
+		  
+{ "label": "Nombre(s)" },
+		  
+{ "label": "Apellido Paterno" },
+		  
+{ "label": "Beneficiarios" }
+	      ],
+	      "rows": [
+	      	{ "id": "XXX", "data": [
 "XXX",
 "XXX",
 "XXX",
 "XXX"
-      	] },
-      	{ "id": "XXX", "data": [
-	      "XXX",
+	      	] },
+	      	{ "id": "XXX", "data": [
 "XXX",
 "XXX",
 "XXX",
 "XXX"
-      	] }
-      ]
-    }
-  ]
-}
+	      	] }
+	      ]
+	    }
+	  ]
+	}
