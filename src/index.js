@@ -79,6 +79,8 @@ import './components/app/beneficiario/beneficiario-add.tag'
 import './components/app/beneficiario/beneficiario-edit.tag'
 import './components/app/beneficiario/beneficiario-delete.tag'
 
+import './components/app/SucursalServices/BuscarSucursalPage.tag'
+
 const msgs = require('json-loader!./default-messages.json')
 var msgJSON = JSON.stringify(msgs)
 localStorage.setItem('messages', msgJSON)
@@ -127,6 +129,7 @@ var routes = [
   { route: '/afiliado-delete/', tag: 'afiliado-delete' },
   { route: '/tipopension-delete/', tag: 'tipopension-delete' },
   { route: '/solicitudpension-delete/', tag: 'solicitudpension-delete' },
-  { route: '/beneficiario-delete/', tag: 'beneficiario-delete' }
+  { route: '/beneficiario-delete/', tag: 'beneficiario-delete' },
+  { route: '/BuscarSucursalPage/', tag: 'BuscarSucursalPage' }
 ]
 riot.mount('*', { routes: routes, options: { hashbang: true, params: { title: 'Login', username: 'Usuario', password: 'Contrase�a', link: '//' } } })

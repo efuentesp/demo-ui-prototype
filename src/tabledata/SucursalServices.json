@@ -1,0 +1,31 @@
+
+	{"ids":[
+	    {
+	      "id": "ResultadosBusquedaList",
+	      "headers": [
+
+{ "label": "NSS" },
+
+{ "label": "Nombre(s)" },
+
+{ "label": "Apellido Paterno" },
+
+{ "label": "Beneficiarios" }
+	      ],
+	      "rows": [
+	      	{ "id": "XXX", "data": [
+"XXX",
+"XXX",
+"XXX",
+"XXX"
+	      	] },
+	      	{ "id": "XXX", "data": [
+"XXX",
+"XXX",
+"XXX",
+"XXX"
+	      	] }
+	      ]
+	    }
+	  ]
+	}

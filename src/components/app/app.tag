@@ -4,6 +4,11 @@
 			picture="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"
 			name="Juan Pérez González" role="Afiliado"/>
 		<sidebar-menu>
+		<menu-section title="EU-Rent">
+			<side-menu icon="fa fa-group" label="Sucursal">
+				<menu-item to="/BuscarSucursalPage/" label="Buscar Sucursal"/>
+			</side-menu>
+		</menu-section>
 		<menu-section title="Afiliado Administración">
 			<side-menu icon="fa fa-group" label="afiliado">
 				<menu-item to="/afiliado-admin/" label="Administración"/>
