@@ -6,7 +6,12 @@
 		<sidebar-menu>
 		<menu-section title="EU-Rent">
 			<side-menu icon="fa fa-group" label="Sucursal">
-				<menu-item to="/BuscarSucursalPage/" label="Buscar Sucursal"/>
+				<menu-item to="/buscarsucursalpage/" label="Buscar Sucursal"/>
+				<menu-item to="/crearsucursalpage/" label="Crear Sucursal"/>
+			</side-menu>
+			<side-menu icon="fa fa-group" label="Modelo de Auto">
+				<menu-item to="/buscarmodeloautopage/" label="Buscar Modelo de Auto"/>
+				<menu-item to="/crearmodeloautopage/" label="Crear Modelo de Auto"/>
 			</side-menu>
 		</menu-section>
 		<menu-section title="Afiliado Administración">

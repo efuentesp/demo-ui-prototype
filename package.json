@@ -4,7 +4,12 @@
   "description": "",
   "scripts": {
     "build": "webpack --config webpack-prod.config.js --colors",
-    "dev": "webpack-dev-server --config webpack-dev.config.js --watch --colors"
+    "dev": "npm run copy && webpack-dev-server --config webpack-dev.config.js --watch --colors",
+    "copy": "npm run copy-tags && npm run copy-partials && npm run cat-imports",
+    "copy-tags": "cp -rf C:/Users/efuentes/runtime-EclipseXtext/UC/src-gen/ui-prototype/tags/. src/components/app",
+    "copy-partials": "cp -rf C:/Users/efuentes/runtime-EclipseXtext/UC/src-gen/ui-prototype/partials/. src/import-xtext",
+    "cat-imports": "cat src/import-xtext/import_*.js > src/import_gen_tags.js",
+    "screenshots": "phantomjs src/screenshoot.js"
   },
   "repository": {
     "type": "git",

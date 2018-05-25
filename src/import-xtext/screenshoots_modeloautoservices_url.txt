@@ -1,0 +1,7 @@
+// Urls for: ModeloAutoServices
+URLS = URLS.concat([
+{page: 'http://localhost:1337/#!/buscarmodeloautopage/', title: 'BuscarModeloAutoPage', module: 'ModeloAutoServices'},
+{page: 'http://localhost:1337/#!/crearmodeloautopage/', title: 'CrearModeloAutoPage', module: 'ModeloAutoServices'},
+{page: 'http://localhost:1337/#!/editarmodeloautopage/', title: 'EditarModeloAutoPage', module: 'ModeloAutoServices'},
+{page: 'http://localhost:1337/#!/eliminarmodeloautopage/', title: 'EliminarModeloAutoPage', module: 'ModeloAutoServices'},
+])

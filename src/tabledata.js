@@ -4,6 +4,7 @@ module.exports = {
 { path: require('json-loader!./tabledata/modaltipoPension.json') },
 { path: require('json-loader!./tabledata/modalsolicitudPension.json') },
 { path: require('json-loader!./tabledata/modalbeneficiario.json') },
-{ path: require('json-loader!./tabledata/SucursalServices.json') }
+{ path: require('json-loader!./tabledata/sucursalservices.json') },
+{ path: require('json-loader!./tabledata/modeloautoservices.json') }
   ]
 }

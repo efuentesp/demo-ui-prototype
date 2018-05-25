@@ -1,7 +1,7 @@
 
 	{"ids":[
 	    {
-	      "id": "buscarsucursalpage-resultadosbusquedalist",
+	      "id": "buscarmodeloautopage-resultadosbusquedalist",
 	      "headers": [
 
 { "label": "NSS" },
@@ -30,8 +30,8 @@
 	        {
 	         "group": "Acciones",
 	         "actions": [
-	          { "label": "Editar", "link": "/editarsucursalpage/" },
-	          { "label": "Eliminar", "link": "/eliminarsucursalpage/" }
+	          { "label": "Editar", "link": "/editarmodeloautopage/" },
+	          { "label": "Eliminar", "link": "/eliminarmodeloautopage/" }
 	         ]
 	        }
 	      ]

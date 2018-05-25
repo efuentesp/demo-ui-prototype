@@ -1,0 +1,4 @@
+{ route: '/buscarsucursalpage/', tag: 'buscarsucursalpage' },
+{ route: '/crearsucursalpage/', tag: 'crearsucursalpage' },
+{ route: '/editarsucursalpage/', tag: 'editarsucursalpage' },
+{ route: '/eliminarsucursalpage/', tag: 'eliminarsucursalpage' },

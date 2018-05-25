@@ -23,7 +23,12 @@
 		<div if={opts.action=='search'}>
           <submit-button to={ opts.return } action="search"></submit-button>
         </div>
-		<div if={opts.action=='custom'}>
+        <div if={opts.action=='custom'}>
+              <div class="ln_solid"></div>
+              <submit-button to={ opts.return } action="custom" icon={ opts.icon } caption={ opts.button } ></submit-button>
+            </div>
+          </div>
+		<div if={opts.action=='custom-return'}>
           <div class="ln_solid"></div>
           <submit-button to={ opts.return } action="custom" icon={ opts.icon } caption={ opts.button } ></submit-button>
 		  <submit-button to={ opts.return } action="return"></submit-button>

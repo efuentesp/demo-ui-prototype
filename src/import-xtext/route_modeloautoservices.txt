@@ -1,0 +1,4 @@
+{ route: '/buscarmodeloautopage/', tag: 'buscarmodeloautopage' },
+{ route: '/crearmodeloautopage/', tag: 'crearmodeloautopage' },
+{ route: '/editarmodeloautopage/', tag: 'editarmodeloautopage' },
+{ route: '/eliminarmodeloautopage/', tag: 'eliminarmodeloautopage' },

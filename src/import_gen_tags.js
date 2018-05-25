@@ -1,0 +1,8 @@
+import './components/app/modeloautoservices/buscarmodeloautopage.tag'
+import './components/app/modeloautoservices/crearmodeloautopage.tag'
+import './components/app/modeloautoservices/editarmodeloautopage.tag'
+import './components/app/modeloautoservices/eliminarmodeloautopage.tag'
+import './components/app/sucursalservices/buscarsucursalpage.tag'
+import './components/app/sucursalservices/crearsucursalpage.tag'
+import './components/app/sucursalservices/editarsucursalpage.tag'
+import './components/app/sucursalservices/eliminarsucursalpage.tag'

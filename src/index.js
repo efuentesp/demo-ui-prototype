@@ -79,7 +79,7 @@ import './components/app/beneficiario/beneficiario-add.tag'
 import './components/app/beneficiario/beneficiario-edit.tag'
 import './components/app/beneficiario/beneficiario-delete.tag'
 
-import './components/app/SucursalServices/BuscarSucursalPage.tag'
+import './import_gen_tags.js'
 
 const msgs = require('json-loader!./default-messages.json')
 var msgJSON = JSON.stringify(msgs)
@@ -130,6 +130,15 @@ var routes = [
   { route: '/tipopension-delete/', tag: 'tipopension-delete' },
   { route: '/solicitudpension-delete/', tag: 'solicitudpension-delete' },
   { route: '/beneficiario-delete/', tag: 'beneficiario-delete' },
-  { route: '/BuscarSucursalPage/', tag: 'BuscarSucursalPage' }
+  { route: '/buscarsucursalpage/', tag: 'buscarsucursalpage' },
+  { route: '/crearsucursalpage/', tag: 'crearsucursalpage' },
+  { route: '/buscarsucursalpage/', tag: 'buscarsucursalpage' },
+  { route: '/crearsucursalpage/', tag: 'crearsucursalpage' },
+  { route: '/editarsucursalpage/', tag: 'editarsucursalpage' },
+  { route: '/eliminarsucursalpage/', tag: 'eliminarsucursalpage' },
+  { route: '/buscarmodeloautopage/', tag: 'buscarmodeloautopage' },
+  { route: '/crearmodeloautopage/', tag: 'crearmodeloautopage' },
+  { route: '/editarmodeloautopage/', tag: 'editarmodeloautopage' },
+  { route: '/eliminarmodeloautopage/', tag: 'eliminarmodeloautopage' }
 ]
 riot.mount('*', { routes: routes, options: { hashbang: true, params: { title: 'Login', username: 'Usuario', password: 'Contrase�a', link: '//' } } })

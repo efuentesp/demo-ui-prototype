@@ -1,0 +1,7 @@
+// Urls for: SucursalServices
+URLS = URLS.concat([
+{page: 'http://localhost:1337/#!/buscarsucursalpage/', title: 'BuscarSucursalPage', module: 'SucursalServices'},
+{page: 'http://localhost:1337/#!/crearsucursalpage/', title: 'CrearSucursalPage', module: 'SucursalServices'},
+{page: 'http://localhost:1337/#!/editarsucursalpage/', title: 'EditarSucursalPage', module: 'SucursalServices'},
+{page: 'http://localhost:1337/#!/eliminarsucursalpage/', title: 'EliminarSucursalPage', module: 'SucursalServices'},
+])
