@@ -1,4 +1,4 @@
-\documentclass[10pt, letterpaper]{book}
+\documentclass[10pt, letterpaper]{report}
 
 %% packages
 \usepackage[utf8]{inputenc}
@@ -7,6 +7,9 @@
 \usepackage{titlesec}
 \usepackage{glossaries}
 \usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{lscape}
 
 %% page settings
 \usepackage[top=2cm, bottom=1.8cm, left=2.5cm, right=2.5cm]{geometry} % for page border settings
@@ -46,58 +49,64 @@
 %\fancyhead[EC]{\rightmark}
 %\cfoot{\thepage}
 
-\section{Modulo: Modelo de Autos}
+\section{Modulo: Modelo de Autos} \label{sec:cumodeloautoservices}
 
-\subsection{UC05. Crear un Modelo de Auto} \label{CrearModeloAuto}
-\textbf{Actores}: Administrador
+\subsection{UC05. Crear un Modelo de Auto} \label{sec:cucrearmodeloauto}
 
-\textbf{Objetivo}: EU-Rent decide ofrecer a sus Clientes un nuevo modelo de Auto.
+\begin{tabular}{ p{3.5cm} p{11.5cm} }
+	\textbf{Actores} & Administrador \\
+	\textbf{Objetivo} & EU-Rent decide ofrecer a sus Clientes un nuevo modelo de Auto. \\
+	\textbf{Evento Disparador} & Administrador solicita la p谩gina \textit{[Crear Modelo de Auto]}. \\
+	\textbf{Tipo} & Usuario \\
+	\\
+\end{tabular}
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Crear Modelo de Auto]}.
-
-\textbf{Tipo}: Usuario\\
-
-\textbf{Escenario Principal}
-
-\begin{enumerate}
-\item El Sistema muestra la p醙ina \textit{[Crear Modelo de Auto]}.
-\item Administrador captura informaci髇 en la forma \textit{[Crear Modelo de Auto]}.
-\item Administrador elige el comando \textit{[Guardar]}.
-\item El Sistema valida que los datos de la forma \textit{[Crear Modelo de Auto]} estan completos.
+\begin{tabular}{ p{15.5cm} }
+	\textbf{Escenario Principal} \\
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
-	\end{enumerate}
-\item El Sistema crea un nuevo registro en la entidad \textit{[ModeloAuto]}.
-\item Fin del Caso de Uso.
-\end{enumerate}
-\subsection{UC06. Buscar un Modelo de Auto} \label{BuscarModeloAuto}
+		\item El Sistema muestra la p谩gina \textit{[Crear Modelo de Auto]}.
+		\item Administrador captura informaci贸n en la forma \textit{[Crear Modelo de Auto]}.
+		\item Administrador elige el comando \textit{[Guardar]}.
+		\item El Sistema valida que los datos de la forma \textit{[Crear Modelo de Auto]} estan completos.
+			\begin{enumerate}
+				\item Excepci贸n: Datos incompletos.
+			\end{enumerate}
+		\item El Sistema crea un nuevo registro en la entidad \textit{[ModeloAuto]}.
+		\item Fin del Caso de Uso.
+	\end{enumerate} \\
+\end{tabular}
+
+
+
+
+\subsection{UC06. Buscar un Modelo de Auto} \label{sec:cubuscarmodeloauto}
 \textbf{Actores}: Administrador
 
 \textbf{Objetivo}: EU-Rent decide buscar un Modelo de Auto para editarlo o eliminarlo.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Buscar Modelo de Auto]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Buscar Modelo de Auto]}.
 
 \textbf{Tipo}: Usuario\\
 
 \textbf{Escenario Principal}
 
 \begin{enumerate}
-\item El Sistema muestra la p醙ina \textit{[Buscar Modelo de Auto]}.
-\item Administrador captura informaci髇 en la forma \textit{[Criterios de B鷖queda]}.
+\item El Sistema muestra la p谩gina \textit{[Buscar Modelo de Auto]}.
+\item Administrador captura informaci贸n en la forma \textit{[Criterios de B煤squeda]}.
 \item Administrador elige el comando \textit{[Buscar]}.
-\item El Sistema valida que los datos de la forma \textit{[Criterios de B鷖queda]} estan completos.
+\item El Sistema valida que los datos de la forma \textit{[Criterios de B煤squeda]} estan completos.
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
+		\item Excepci贸n: Datos incompletos.
 	\end{enumerate}
-\item El Sistema obtiene informaci髇 y muestra la lista \textit{[Resultados de B鷖queda]}.
+\item El Sistema obtiene informaci贸n y muestra la lista \textit{[Resultados de B煤squeda]}.
 \item Fin del Caso de Uso.
 \end{enumerate}
-\subsection{UC07. Editar un Modelo de Auto} \label{EditarModeloAuto}
+\subsection{UC07. Editar un Modelo de Auto} \label{sec:cueditarmodeloauto}
 \textbf{Actores}: Administrador
 
 \textbf{Objetivo}: EU-Rent decide modificar los datos de un Modelo de Auto.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Editar Modelo de Auto]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Editar Modelo de Auto]}.
 
 \textbf{Tipo}: Usuario\\
 
@@ -106,14 +115,14 @@
 \begin{enumerate}
 \item El Sistema invoca al Caso de Uso \textit{[UC06. Buscar un Modelo de Auto]}.
 \item Administrador selecciona el comando \textit{[Editar]}.
-\item El Sistema muestra la p醙ina \textit{[Editar Modelo de Auto]}.
-\item Administrador captura informaci髇 en la forma \textit{[Editar Modelo de Auto]}.
+\item El Sistema muestra la p谩gina \textit{[Editar Modelo de Auto]}.
+\item Administrador captura informaci贸n en la forma \textit{[Editar Modelo de Auto]}.
 \item Administrador elige el comando \textit{[Guardar]}.
 \item El Sistema valida que los datos de la forma \textit{[Editar Modelo de Auto]} estan completos.
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
+		\item Excepci贸n: Datos incompletos.
 	\end{enumerate}
-\item El Sistema actuliza la informaci髇 de la entidad \textit{[ModeloAuto]}.
+\item El Sistema actuliza la informaci贸n de la entidad \textit{[ModeloAuto]}.
 \item Fin del Caso de Uso.
 \end{enumerate}
 \subsection{UC08. Eliminar Modelo de Auto} \label{EliminarModeloAuto}
@@ -121,7 +130,7 @@
 
 \textbf{Objetivo}: EU Rent decide eliminar un Modelo de Auto existente.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Eliminar Modelo de Auto]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Eliminar Modelo de Auto]}.
 
 \textbf{Tipo}: Usuario\\
 
@@ -130,7 +139,7 @@
 \begin{enumerate}
 \item El Sistema invoca al Caso de Uso \textit{[UC06. Buscar un Modelo de Auto]}.
 \item Administrador selecciona el comando \textit{[Eliminar]}.
-\item El Sistema muestra la p醙ina \textit{[Eliminar Modelo de Auto]}.
+\item El Sistema muestra la p谩gina \textit{[Eliminar Modelo de Auto]}.
 \item Administrador elige el comando \textit{[Eliminar]}.
 \item El Sistema elimina el registro de la entidad \textit{[ModeloAuto]}.
 \item Fin del Caso de Uso.
@@ -142,19 +151,19 @@
 
 \textbf{Objetivo}: EU-Rent decide abrir una nueva Sucursal.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Crear Sucursal]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Crear Sucursal]}.
 
 \textbf{Tipo}: Usuario\\
 
 \textbf{Escenario Principal}
 
 \begin{enumerate}
-\item El Sistema muestra la p醙ina \textit{[Crear Sucursal]}.
-\item Administrador captura informaci髇 en la forma \textit{[Crear Sucursal]}.
+\item El Sistema muestra la p谩gina \textit{[Crear Sucursal]}.
+\item Administrador captura informaci贸n en la forma \textit{[Crear Sucursal]}.
 \item Administrador elige el comando \textit{[Guardar]}.
 \item El Sistema valida que los datos de la forma \textit{[Crear Sucursal]} estan completos.
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
+		\item Excepci贸n: Datos incompletos.
 	\end{enumerate}
 \item El Sistema crea un nuevo registro en la entidad \textit{[Sucursal]}.
 \item Fin del Caso de Uso.
@@ -164,21 +173,21 @@
 
 \textbf{Objetivo}: EU-Rent decide buscar una Sucursal para editarla o eliminarla.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Buscar Sucursal]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Buscar Sucursal]}.
 
 \textbf{Tipo}: Usuario\\
 
 \textbf{Escenario Principal}
 
 \begin{enumerate}
-\item El Sistema muestra la p醙ina \textit{[Buscar Sucursal]}.
-\item Administrador captura informaci髇 en la forma \textit{[Criterios de B鷖queda]}.
+\item El Sistema muestra la p谩gina \textit{[Buscar Sucursal]}.
+\item Administrador captura informaci贸n en la forma \textit{[Criterios de B煤squeda]}.
 \item Administrador elige el comando \textit{[Buscar]}.
-\item El Sistema valida que los datos de la forma \textit{[Criterios de B鷖queda]} estan completos.
+\item El Sistema valida que los datos de la forma \textit{[Criterios de B煤squeda]} estan completos.
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
+		\item Excepci贸n: Datos incompletos.
 	\end{enumerate}
-\item El Sistema obtiene informaci髇 y muestra la lista \textit{[Resultados de B鷖queda]}.
+\item El Sistema obtiene informaci贸n y muestra la lista \textit{[Resultados de B煤squeda]}.
 \item Fin del Caso de Uso.
 \end{enumerate}
 \subsection{UC03. Editar una Sucursal} \label{EditarSucursal}
@@ -186,7 +195,7 @@
 
 \textbf{Objetivo}: EU-Rent decide modificar los datos de una Sucursal.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Editar Sucursal]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Editar Sucursal]}.
 
 \textbf{Tipo}: Usuario\\
 
@@ -195,14 +204,14 @@
 \begin{enumerate}
 \item El Sistema invoca al Caso de Uso \textit{[UC02. Buscar una Sucursal]}.
 \item Administrador selecciona el comando \textit{[Editar]}.
-\item El Sistema muestra la p醙ina \textit{[Editar Sucursal]}.
-\item Administrador captura informaci髇 en la forma \textit{[Editar Sucursal]}.
+\item El Sistema muestra la p谩gina \textit{[Editar Sucursal]}.
+\item Administrador captura informaci贸n en la forma \textit{[Editar Sucursal]}.
 \item Administrador elige el comando \textit{[Guardar]}.
 \item El Sistema valida que los datos de la forma \textit{[Editar Sucursal]} estan completos.
 	\begin{enumerate}
-		\item Excepci髇: Datos incompletos.
+		\item Excepci贸n: Datos incompletos.
 	\end{enumerate}
-\item El Sistema actuliza la informaci髇 de la entidad \textit{[Sucursal]}.
+\item El Sistema actuliza la informaci贸n de la entidad \textit{[Sucursal]}.
 \item Fin del Caso de Uso.
 \end{enumerate}
 \subsection{UC04. Eliminar Sucursal} \label{EliminarSucursal}
@@ -210,7 +219,7 @@
 
 \textbf{Objetivo}: EU Rent decide eliminar una Sucursal existente.
 
-\textbf{Evento Disparador}: Administrador solicita la p醙ina \textit{[Eliminar Sucursal]}.
+\textbf{Evento Disparador}: Administrador solicita la p谩gina \textit{[Eliminar Sucursal]}.
 
 \textbf{Tipo}: Usuario\\
 
@@ -219,39 +228,33 @@
 \begin{enumerate}
 \item El Sistema invoca al Caso de Uso \textit{[UC02. Buscar una Sucursal]}.
 \item Administrador selecciona el comando \textit{[Eliminar]}.
-\item El Sistema muestra la p醙ina \textit{[Eliminar Sucursal]}.
+\item El Sistema muestra la p谩gina \textit{[Eliminar Sucursal]}.
 \item Administrador elige el comando \textit{[Eliminar]}.
 \item El Sistema elimina el registro de la entidad \textit{[Sucursal]}.
 \item Fin del Caso de Uso.
 \end{enumerate}
 
 
-\chapter{Especificacion de Interfaz Grafica}
+\chapter{Especificaci贸n de la Interfaz Gr谩fica}
 
 \section{Modulo: Sucursales}
 
 \subsection{Crear Sucursal}
+\textbf{Descripci贸n}: Permite registrar nuevas Sucursales.\\
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{ui-prototype/SucursalServices/CrearSucursalPage.png}
+\end{figure}
 
-\includegraphics[width=\linewidth]{ui-prototype/SucursalServices/CrearSucursalPage.png}
-
-\begin{center}
- \begin{tabular}{|c c c c|} 
- \hline
- Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
- \hline\hline
- 1 & 6 & 87837 & 787 \\ 
- \hline
- 2 & 7 & 78 & 5415 \\
- \hline
- 3 & 545 & 778 & 7507 \\
- \hline
- 4 & 545 & 18744 & 7560 \\
- \hline
- 5 & 88 & 788 & 6344 \\ [1ex] 
- \hline
-\end{tabular}
-\end{center}
-
+\begin{landscape}
+	\begin{tabular}{ p{2cm} p{2cm} p{2cm} p{2cm} p{2cm} p{1.5cm} p{3cm} p{4cm} } 
+		\multicolumn{8}{ c }{\textbf{Elemntos de Pantalla: Crear Sucursal}} \\
+		\hline
+		\textbf{Elemento (etiqueta)} & \textbf{Tipo Elemento} & \textbf{Valor por defecto} & \textbf{Tipo de Dato y Longitud} & \textbf{驴Requerido?} & \textbf{Entrada-Salida} & \textbf{Fuente de Datos} & \textbf{Comentarios} \\
+		\hline
+		NSS & Texto & Vac铆o & Alfanum茅rico (10) & Si & E & Afiliado.Nss & ... \\ 
+		\hline
+	\end{tabular}
+\end{landscape}
 
 
 \subsection{Buscar Sucursal}
@@ -284,7 +287,6 @@
 \subsection{Eliminar Modelo de Auto}
 
 \includegraphics[width=\linewidth]{ui-prototype/SucursalServices/EliminarSucursalPage.png}
-
 
 %\input{content/pantallas}
 
