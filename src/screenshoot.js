@@ -46,7 +46,7 @@ var renderPage = function (page, url) {
     width: SCREENSHOT_WIDTH,
     height: pageHeight
   }
-  page.render('screenshots/' + url.module + '/' + url.title + '.png')
+  page.render('functional-requirements/document/ui-prototype/' + url.module + '/' + url.title + '.png')
   console.log('rendered:', url.title + '.png')
 }
 

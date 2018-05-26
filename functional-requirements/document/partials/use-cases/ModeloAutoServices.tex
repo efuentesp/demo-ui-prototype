@@ -1,0 +1,89 @@
+\section{Modulo: Modelo de Autos}
+
+\subsection{UC05. Crear un Modelo de Auto} \label{CrearModeloAuto}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide ofrecer a sus Clientes un nuevo modelo de Auto.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Crear Modelo de Auto]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema muestra la página \textit{[Crear Modelo de Auto]}.
+\item Administrador captura información en la forma \textit{[Crear Modelo de Auto]}.
+\item Administrador elige el comando \textit{[Guardar]}.
+\item El Sistema valida que los datos de la forma \textit{[Crear Modelo de Auto]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema crea un nuevo registro en la entidad \textit{[ModeloAuto]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC06. Buscar un Modelo de Auto} \label{BuscarModeloAuto}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide buscar un Modelo de Auto para editarlo o eliminarlo.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Buscar Modelo de Auto]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema muestra la página \textit{[Buscar Modelo de Auto]}.
+\item Administrador captura información en la forma \textit{[Criterios de Búsqueda]}.
+\item Administrador elige el comando \textit{[Buscar]}.
+\item El Sistema valida que los datos de la forma \textit{[Criterios de Búsqueda]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema obtiene información y muestra la lista \textit{[Resultados de Búsqueda]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC07. Editar un Modelo de Auto} \label{EditarModeloAuto}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide modificar los datos de un Modelo de Auto.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Editar Modelo de Auto]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema invoca al Caso de Uso \textit{[UC06. Buscar un Modelo de Auto]}.
+\item Administrador selecciona el comando \textit{[Editar]}.
+\item El Sistema muestra la página \textit{[Editar Modelo de Auto]}.
+\item Administrador captura información en la forma \textit{[Editar Modelo de Auto]}.
+\item Administrador elige el comando \textit{[Guardar]}.
+\item El Sistema valida que los datos de la forma \textit{[Editar Modelo de Auto]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema actuliza la información de la entidad \textit{[ModeloAuto]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC08. Eliminar Modelo de Auto} \label{EliminarModeloAuto}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU Rent decide eliminar un Modelo de Auto existente.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Eliminar Modelo de Auto]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema invoca al Caso de Uso \textit{[UC06. Buscar un Modelo de Auto]}.
+\item Administrador selecciona el comando \textit{[Eliminar]}.
+\item El Sistema muestra la página \textit{[Eliminar Modelo de Auto]}.
+\item Administrador elige el comando \textit{[Eliminar]}.
+\item El Sistema elimina el registro de la entidad \textit{[ModeloAuto]}.
+\item Fin del Caso de Uso.
+\end{enumerate}

@@ -10,7 +10,11 @@
     "copy-tags": "cp -rf C:/Users/efuentes/runtime-EclipseXtext/UC/src-gen/ui-prototype/tags/. src/components/app",
     "copy-partials": "cp -rf C:/Users/efuentes/runtime-EclipseXtext/UC/src-gen/ui-prototype/partials/. src/import-xtext",
     "cat-imports": "cat src/import-xtext/import_*.js > src/import_gen_tags.js",
-    "screenshots": "phantomjs src/screenshoot.js"
+    "screenshots": "phantomjs src/screenshoot.js",
+    "latex-header": "cat functional-requirements/document/partials/01-header.tex > functional-requirements/document/eu-car.tex",
+    "latex-cu": "cat functional-requirements/document/partials/use-cases/* >> functional-requirements/document/eu-car.tex",
+    "latex-footer": "cat functional-requirements/document/partials/02-footer.tex >> functional-requirements/document/eu-car.tex",
+    "latex": "npm run latex-header && npm run latex-cu && npm run latex-footer"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,89 @@
+\section{Modulo: Sucursales}
+
+\subsection{UC01. Crear una Sucursal} \label{CrearSucursal}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide abrir una nueva Sucursal.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Crear Sucursal]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema muestra la página \textit{[Crear Sucursal]}.
+\item Administrador captura información en la forma \textit{[Crear Sucursal]}.
+\item Administrador elige el comando \textit{[Guardar]}.
+\item El Sistema valida que los datos de la forma \textit{[Crear Sucursal]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema crea un nuevo registro en la entidad \textit{[Sucursal]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC02. Buscar una Sucursal} \label{BuscarSucursal}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide buscar una Sucursal para editarla o eliminarla.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Buscar Sucursal]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema muestra la página \textit{[Buscar Sucursal]}.
+\item Administrador captura información en la forma \textit{[Criterios de Búsqueda]}.
+\item Administrador elige el comando \textit{[Buscar]}.
+\item El Sistema valida que los datos de la forma \textit{[Criterios de Búsqueda]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema obtiene información y muestra la lista \textit{[Resultados de Búsqueda]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC03. Editar una Sucursal} \label{EditarSucursal}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU-Rent decide modificar los datos de una Sucursal.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Editar Sucursal]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema invoca al Caso de Uso \textit{[UC02. Buscar una Sucursal]}.
+\item Administrador selecciona el comando \textit{[Editar]}.
+\item El Sistema muestra la página \textit{[Editar Sucursal]}.
+\item Administrador captura información en la forma \textit{[Editar Sucursal]}.
+\item Administrador elige el comando \textit{[Guardar]}.
+\item El Sistema valida que los datos de la forma \textit{[Editar Sucursal]} estan completos.
+	\begin{enumerate}
+		\item Excepción: Datos incompletos.
+	\end{enumerate}
+\item El Sistema actuliza la información de la entidad \textit{[Sucursal]}.
+\item Fin del Caso de Uso.
+\end{enumerate}
+\subsection{UC04. Eliminar Sucursal} \label{EliminarSucursal}
+\textbf{Actores}: Administrador
+
+\textbf{Objetivo}: EU Rent decide eliminar una Sucursal existente.
+
+\textbf{Evento Disparador}: Administrador solicita la página \textit{[Eliminar Sucursal]}.
+
+\textbf{Tipo}: Usuario\\
+
+\textbf{Escenario Principal}
+
+\begin{enumerate}
+\item El Sistema invoca al Caso de Uso \textit{[UC02. Buscar una Sucursal]}.
+\item Administrador selecciona el comando \textit{[Eliminar]}.
+\item El Sistema muestra la página \textit{[Eliminar Sucursal]}.
+\item Administrador elige el comando \textit{[Eliminar]}.
+\item El Sistema elimina el registro de la entidad \textit{[Sucursal]}.
+\item Fin del Caso de Uso.
+\end{enumerate}

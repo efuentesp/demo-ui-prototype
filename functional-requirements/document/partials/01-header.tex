@@ -1,0 +1,47 @@
+\documentclass[10pt, letterpaper]{book}
+
+%% packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish, mexico]{babel}
+\usepackage{titlesec}
+\usepackage{glossaries}
+\usepackage{graphicx}
+
+%% page settings
+\usepackage[top=2cm, bottom=1.8cm, left=2.5cm, right=2.5cm]{geometry} % for page border settings
+\usepackage{fancyhdr} % for head and footer options
+
+%% commands
+\newcommand{\tbi}[1]{\textbf{\textit{#1}}}
+
+%% glossary
+\makeglossaries
+\newglossaryentry{Sucursal}
+{
+	name={Sucursal},
+	description={Sucursal de la Agencia de Renta de Autos.}
+}
+\newglossaryentry{ModeloAuto}
+{
+	name={Modelo de Auto},
+	description={Modelo del Auto a la renta.}
+}
+
+\begin{document}
+
+\title{Requerimientos Funcionales (EU-Car)}
+\author{Softtek}
+\date{}
+\maketitle
+
+\pagestyle{plain}
+\tableofcontents
+
+\chapter{Casos de Uso}
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[OC]{\leftmark}
+%\fancyhead[EC]{\rightmark}
+%\cfoot{\thepage}
