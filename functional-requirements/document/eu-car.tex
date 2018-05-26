@@ -41,6 +41,52 @@
 \pagestyle{plain}
 \tableofcontents
 
+\chapter{Modelo de Dominio}
+
+%\section{Diagrama} \label{sec:uml-domain-model}
+
+\begin{figure}[h]
+	\label{tab:uml-domain-model}
+	\includegraphics[width=0.5\textwidth]{uml-diagrams/domain-model.png}
+	\caption{Modelo de Dominio}
+\end{figure}
+
+\section{Descripción de las Entidades de Negocio} \label{sec:entity-description}
+
+\begin{table}[h]
+	\caption{Entidades del Modelo de Dominio}
+	\label{tab:entities}
+	%\resizebox{\textwidth}{!}{
+	\begin{center}
+	\begin{tabular}{ l l } 
+		\hline
+		\textbf{Entidad} & \textbf{Descripción} \\
+		\hline
+		Solicitud Pensión & Información de la Solicitud de Pensión derivada del derecho de un Afiliado al IMSS. \\ 
+		\hline
+	\end{tabular}
+	\end{center}
+	%}
+\end{table}
+
+\section{Campos por Entidad de Negocio} \label{sec:entity-fields}
+
+\begin{table}[h]
+	\caption{Entidad de Negocio: Solicitud Pensión}
+	\label{tab:fields-solicitudpension}
+	%\resizebox{\textwidth}{!}{
+	\begin{center}
+	\begin{tabular}{ l l l l } 
+		\hline
+		\textbf{Campo} & \textbf{Tipo} & \textbf{Restricciones} & \textbf{Descripción} \\
+		\hline
+		Número & Integer & Required: true & Número de la Solicitud generado automáticamente. \\ 
+		\hline
+	\end{tabular}
+	\end{center}
+	%}
+\end{table}
+
 \chapter{Casos de Uso}
 
 %\pagestyle{fancy}
@@ -242,19 +288,26 @@
 \subsection{Crear Sucursal}
 \textbf{Descripción}: Permite registrar nuevas Sucursales.\\
 \begin{figure}[h]
+	\label{tab:layout-crearsucursalpage}
 	\includegraphics[width=\linewidth]{ui-prototype/SucursalServices/CrearSucursalPage.png}
+	\caption{Layout: Crear Sucursal}
 \end{figure}
 
-\begin{landscape}
+%\begin{landscape}
+\begin{table}[t]
+	\caption{Forma: Crear Sucursal}
+	\label{tab:campos-crearsucursalpage}
+	\resizebox{\textwidth}{!}{
 	\begin{tabular}{ p{2cm} p{2cm} p{2cm} p{2cm} p{2cm} p{1.5cm} p{3cm} p{4cm} } 
-		\multicolumn{8}{ c }{\textbf{Elemntos de Pantalla: Crear Sucursal}} \\
 		\hline
-		\textbf{Elemento (etiqueta)} & \textbf{Tipo Elemento} & \textbf{Valor por defecto} & \textbf{Tipo de Dato y Longitud} & \textbf{¿Requerido?} & \textbf{Entrada-Salida} & \textbf{Fuente de Datos} & \textbf{Comentarios} \\
+		\textbf{Etiqueta} & \textbf{Widget} & \textbf{Default} & \textbf{Tipo} & \textbf{¿Requerido?} & \textbf{E/S} & \textbf{Fuente de Datos} & \textbf{Comentarios} \\
 		\hline
-		NSS & Texto & Vacío & Alfanumérico (10) & Si & E & Afiliado.Nss & ... \\ 
+		NSS & Texto & Vacío & A(10) & Si & E & Afiliado.Nss & ... \\ 
 		\hline
 	\end{tabular}
-\end{landscape}
+	}
+\end{table}
+%\end{landscape}
 
 
 \subsection{Buscar Sucursal}
