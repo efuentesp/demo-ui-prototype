@@ -1,5 +1,5 @@
 <submit-button>
-  <a href={opts.to} class={ btnType() }><i class={ btnIcon() }></i> { btnLabel() }</a>
+  <a id={opts.id} href={opts.to} class={ btnType() }><i class={ btnIcon() }></i> { btnLabel() }</a>
 	<script>
 		this.goToRef = function(){
 			toRef(opts.to);

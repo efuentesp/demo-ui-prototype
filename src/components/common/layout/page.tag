@@ -2,7 +2,7 @@
   <content>
   <div class="page-title">
     <div class="title_left">
-      <h3>{ parent.opts.title }</h3>
+      <h3 id="page-title">{ parent.opts.title }</h3>
     </div>
   </div>
   <div class="x_panel" id={opts.id}>
