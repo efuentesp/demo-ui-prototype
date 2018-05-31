@@ -2,25 +2,25 @@
 \contentsline {chapter}{\numberline {1}Modelo de Dominio}{2}
 \contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n de las Entidades de Negocio}{3}
 \contentsline {section}{\numberline {1.2}Campos por Entidad de Negocio}{3}
-\contentsline {chapter}{\numberline {2}Casos de Uso}{4}
-\contentsline {section}{\numberline {2.1}Modulo: Modelo de Autos}{4}
-\contentsline {subsection}{\numberline {2.1.1}UC05. Crear un Modelo de Auto}{4}
-\contentsline {subsection}{\numberline {2.1.2}UC06. Buscar un Modelo de Auto}{4}
-\contentsline {subsection}{\numberline {2.1.3}UC07. Editar un Modelo de Auto}{5}
-\contentsline {subsection}{\numberline {2.1.4}UC08. Eliminar Modelo de Auto}{5}
-\contentsline {section}{\numberline {2.2}Modulo: Sucursales}{5}
-\contentsline {subsection}{\numberline {2.2.1}UC01. Crear una Sucursal}{5}
-\contentsline {subsection}{\numberline {2.2.2}UC02. Buscar una Sucursal}{6}
-\contentsline {subsection}{\numberline {2.2.3}UC03. Editar una Sucursal}{6}
-\contentsline {subsection}{\numberline {2.2.4}UC04. Eliminar Sucursal}{7}
-\contentsline {chapter}{\numberline {3}Especificaci\IeC {\'o}n de la Interfaz Gr\IeC {\'a}fica}{8}
-\contentsline {section}{\numberline {3.1}Modulo: Sucursales}{8}
-\contentsline {subsection}{\numberline {3.1.1}Crear Sucursal}{8}
-\contentsline {subsection}{\numberline {3.1.2}Buscar Sucursal}{9}
-\contentsline {subsection}{\numberline {3.1.3}Editar Sucursal}{10}
-\contentsline {subsection}{\numberline {3.1.4}Eliminar Sucursal}{11}
-\contentsline {section}{\numberline {3.2}Modulo: Modelo de Autos}{12}
-\contentsline {subsection}{\numberline {3.2.1}Crear Modelo de Auto}{12}
-\contentsline {subsection}{\numberline {3.2.2}Buscar Modelo de Auto}{13}
-\contentsline {subsection}{\numberline {3.2.3}Editar Modelo de Auto}{14}
-\contentsline {subsection}{\numberline {3.2.4}Eliminar Modelo de Auto}{15}
+\contentsline {chapter}{\numberline {2}Casos de Uso}{5}
+\contentsline {section}{\numberline {2.1}Modulo: Sucursales}{6}
+\contentsline {subsection}{\numberline {2.1.1}UC01. Crear una Sucursal}{6}
+\contentsline {subsection}{\numberline {2.1.2}UC02. Buscar una Sucursal}{6}
+\contentsline {subsection}{\numberline {2.1.3}UC03. Editar una Sucursal}{6}
+\contentsline {subsection}{\numberline {2.1.4}UC04. Eliminar Sucursal}{7}
+\contentsline {section}{\numberline {2.2}Modulo: Modelo de Autos}{8}
+\contentsline {subsection}{\numberline {2.2.1}UC05. Crear un Modelo de Auto}{8}
+\contentsline {subsection}{\numberline {2.2.2}UC06. Buscar un Modelo de Auto}{8}
+\contentsline {subsection}{\numberline {2.2.3}UC07. Editar un Modelo de Auto}{8}
+\contentsline {subsection}{\numberline {2.2.4}UC08. Eliminar Modelo de Auto}{9}
+\contentsline {chapter}{\numberline {3}Especificaci\IeC {\'o}n de la Interfaz Gr\IeC {\'a}fica}{10}
+\contentsline {section}{\numberline {3.1}Modulo: Sucursales}{11}
+\contentsline {subsection}{\numberline {3.1.1}Crear Sucursal}{11}
+\contentsline {subsection}{\numberline {3.1.2}Buscar Sucursal}{12}
+\contentsline {subsection}{\numberline {3.1.3}Editar Sucursal}{13}
+\contentsline {subsection}{\numberline {3.1.4}Eliminar Sucursal}{14}
+\contentsline {section}{\numberline {3.2}Modulo: Modelo de Autos}{15}
+\contentsline {subsection}{\numberline {3.2.1}Crear Modelo de Auto}{15}
+\contentsline {subsection}{\numberline {3.2.2}Buscar Modelo de Auto}{16}
+\contentsline {subsection}{\numberline {3.2.3}Editar Modelo de Auto}{17}
+\contentsline {subsection}{\numberline {3.2.4}Eliminar Modelo de Auto}{18}
