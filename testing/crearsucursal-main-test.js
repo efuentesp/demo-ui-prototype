@@ -1,48 +1,40 @@
-var screensDir = 'testing/captures/'
+var screensDir = 'testing/screenshoots/sucursalservices/crearsucursal-main/'
+var screensCaptureDir = 'testing/captures/'
 var stepCounter = 0
+var stepCaptureCounter = 0
 
-casper.test.begin('Crear un Modelo de Auto (Escenario Principal)', 3, function (test) {
+casper.test.begin('Crear un Modelo de Auto (Escenario Principal)', 4, function (test) {
   // trigger: Administrador chooses CrearModeloAutoPage
   casper.start('http://localhost:1337/#!/crearsucursalpage/', function () {
     this.viewport(1280, 850)
   })
 
-  // System shows CrearModeloAutoPage
+  // Step 01. System shows CrearModeloAutoPage
   casper.then(function () {
-    const filename = 'testing/screenshoots/sucursalservices/crearsucursal-main/step1.png'
     test.assertSelectorHasText('#page-title', 'Crear Sucursal')
-    // test.assertUrlMatch(this.getCurrentUrl(), 'http://localhost:1337/#!/crearsucursalpage/')
-    // this.captureSelector(filename, 'html')
-    this.capture(filename)
-    this.echo('Saved screenshot of ' + (this.getCurrentUrl()) + ' to ' + filename)
-    // test.assertExist('#page-title', 'No se encontró la página')
   })
 
-  // Administrador enters CrearModeloAutoPage.CrearForm
-  // casper.then(function () {
-  //   this.fill('selector', {
-  //     'nameOfFormElement': 'yourInput'
-  //   }, true)
-  // })
-
-  // Administrador chooses CrearModeloAutoPage.CrearForm.Guardar
+  // Step02. Administrador enters CrearModeloAutoPage.CrearForm
   casper.then(function () {
-    test.assertExists('#guardar.btn', 'Botón [Guardar] encontrado.')
-    this.click('#guardar.btn')
-
-    casper.wait(1000, function () {
-      const filename = 'testing/screenshoots/sucursalservices/crearsucursal-main/step6.png'
-      test.assertSelectorHasText('#page-title', 'Buscar Sucursal')
-      // test.assertUrlMatch(this.getCurrentUrl(), 'http://localhost:1337/index.html#!/BuscarSucursalPage/')
-      // this.captureSelector(filename, 'html')
-      this.capture(filename)
-      this.echo('Saved screenshot of ' + (this.getCurrentUrl()) + ' to ' + filename)
-    })
+    this.fill('formbox form', {
+      'nombre3': 'Sucursal Guadalajara'
+    }, false)
   })
 
-  // System validates CrearModeloAutoPage.CrearForm
+  // Step03. Administrador chooses CrearModeloAutoPage.CrearForm.Guardar
+  casper.then(function () {
+    // test.assertExists('#btn_guardar.btn', 'Botón [Guardar]')
+    casper.click('#btn_guardar.btn')
+  })
 
-  // System creates ModeloAutoServices.ModeloAuto
+  // Step04. System validates CrearModeloAutoPage.CrearForm
+
+  // Step05. System creates ModeloAutoServices.ModeloAuto
+
+  // Post-condition
+  casper.then(function () {
+    test.assertSelectorHasText('#page-title', 'Buscar Sucursal')
+  })
 
   // Fin del Caso de Uso
   casper.run(function () {
@@ -50,18 +42,30 @@ casper.test.begin('Crear un Modelo de Auto (Escenario Principal)', 3, function (
   })
 })
 
-var stepCapture = function () {
+var stepScreenshot = function () {
   var str = String(++stepCounter)
+  while (str.length < 2) {
+    str = '0' + str
+  }
+  var filename = screensDir + 'step-' + str + '.png'
+  //casper.capture(filename)
+  this.captureSelector(filename, 'div#contentid')
+  this.echo('Saved screenshot of ' + (this.getCurrentUrl()) + ' to ' + name)
+}
+
+var stepCapture = function () {
+  var str = String(++stepCaptureCounter)
   while (str.length < 5) {
     str = '0' + str
   }
-  casper.capture(screensDir + 'step-complete-' + str + '.png', {
+  casper.capture(screensCaptureDir + 'step-complete-' + str + '.png', {
     top: 0,
     left: 0,
-    width: 1200,
+    width: 1280,
     height: 900
   })
 }
 
+casper.on('step.complete', stepScreenshot)
 casper.on('step.start', stepCapture)
 casper.on('step.complete', stepCapture)

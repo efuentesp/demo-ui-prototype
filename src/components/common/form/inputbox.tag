@@ -6,7 +6,7 @@
 		<span class= { iboxClass() }>
 			<i class={ iboxIcon() }></i>
 		</span>
-		<input type={opts.type} name={opts.id}3 class="form-control" name={opts.id}1 placeholder={opts.placeholder} value={opts.value} >
+		<input id=in_{opts.id}  type={opts.type} name={opts.id}3 class="form-control" name={opts.id}1 placeholder={opts.placeholder} value={opts.value} >
 	</div>
 	<span id={opts.id}2 class="help-block"></span>
 

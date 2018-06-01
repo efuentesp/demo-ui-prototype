@@ -14,7 +14,8 @@
     "latex-header": "cat functional-requirements/document/partials/01-header.tex > functional-requirements/document/eu-car.tex",
     "latex-cu": "cat functional-requirements/document/partials/use-cases/* >> functional-requirements/document/eu-car.tex",
     "latex-footer": "cat functional-requirements/document/partials/03-footer.tex >> functional-requirements/document/eu-car.tex",
-    "latex": "npm run latex-header && npm run latex-cu && npm run latex-footer"
+    "latex": "npm run latex-header && npm run latex-cu && npm run latex-footer",
+    "casperjs": "casperjs test testing/crearsucursal-main-test.js"
   },
   "repository": {
     "type": "git",
